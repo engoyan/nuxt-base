@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-base-orm",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./nuxt.config.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/engoyan/nuxt-base.git",
+    "directory": "nuxt-base/orm"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt-layer",
+    "pinia",
+    "pinia-orm",
+    "orm"
+  ],
+  "dependencies": {
+    "@pinia-orm/nuxt": "^1.9.1",
+    "@pinia/nuxt": "^0.5.1",
+    "pinia": "^2.1.7"
+  },
+  "devDependencies": {
+    "nuxt": "^4.2.1"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}

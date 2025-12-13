@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-base-app-base",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./nuxt.config.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/engoyan/nuxt-base.git",
+    "directory": "nuxt-base/app-base"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt-layer",
+    "app-base"
+  ],
+  "dependencies": {
+    "nuxt": "^4.2.1",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3"
+  }
+}

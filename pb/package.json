@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-base-pb",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./nuxt.config.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/engoyan/nuxt-base.git",
+    "directory": "nuxt-base/pb"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt-layer",
+    "pocketbase",
+    "pb"
+  ],
+  "dependencies": {
+    "pocketbase": "^0.22.0"
+  },
+  "devDependencies": {
+    "nuxt": "^4.2.1"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}

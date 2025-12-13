@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-base-vuetify",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./nuxt.config.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/engoyan/nuxt-base.git",
+    "directory": "nuxt-base/vuetify"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt-layer",
+    "vuetify",
+    "ui"
+  ],
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "vuetify": "^3.11.2"
+  },
+  "devDependencies": {
+    "nuxt": "^4.2.1",
+    "sass-embedded": "1.93.3"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}
