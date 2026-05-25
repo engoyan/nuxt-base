@@ -15,10 +15,10 @@
     "pb"
   ],
   "dependencies": {
-    "pocketbase": "^0.22.0"
+    "pocketbase": "^0.26.0"
   },
   "devDependencies": {
-    "nuxt": "^4.2.1"
+    "nuxt": "^4.4.6"
   },
   "overrides": {
     "vue": "latest"

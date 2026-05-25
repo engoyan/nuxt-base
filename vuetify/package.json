@@ -16,10 +16,10 @@
   ],
   "dependencies": {
     "@mdi/font": "^7.4.47",
-    "vuetify": "^4.0.2"
+    "vuetify": "^4.0.7"
   },
   "devDependencies": {
-    "nuxt": "^4.2.1",
+    "nuxt": "^4.4.6",
     "sass-embedded": "1.93.3"
   },
   "overrides": {

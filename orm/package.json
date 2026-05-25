@@ -21,7 +21,7 @@
     "pinia": "^2.1.7"
   },
   "devDependencies": {
-    "nuxt": "^4.2.1"
+    "nuxt": "^4.4.6"
   },
   "overrides": {
     "vue": "latest"
