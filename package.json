@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-base",
+  "version": "0.1.0",
+  "description": "A collection of reusable Nuxt layers",
+  "type": "module",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/engoyan/nuxt-base.git"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "nuxt-layer",
+    "vuetify",
+    "pocketbase",
+    "pinia-orm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "workspaces": [
+    "app-base",
+    "pb",
+    "vuetify",
+    "orm"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
