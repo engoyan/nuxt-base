@@ -1,0 +1,27 @@
+{
+  "name": "my-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "TMPDIR=/tmp nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
+  },
+  "dependencies": {
+    "nuxt": "^4.4.6",
+    "vue": "^3.5.34",
+    "vue-router": "^4.6.4",
+    "@mdi/font": "^7.4.47",
+    "vuetify": "^4.0.7",
+    "@pinia/nuxt": "^0.5.1",
+    "@pinia-orm/nuxt": "^1.9.1",
+    "pinia": "^2.1.7",
+    "pocketbase": "^0.26.0"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.93.3"
+  }
+}
