@@ -2,18 +2,6 @@ import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 import { VPie } from "vuetify/labs/VPie";
-import {
-  VFileUpload,
-  VFileUploadDropzone,
-  VFileUploadItem,
-  VFileUploadList,
-} from "vuetify/labs/VFileUpload";
-import {
-  VStepperVertical,
-  VStepperVerticalItem,
-} from "vuetify/labs/VStepperVertical";
-import { VDateInput } from "vuetify/labs/VDateInput";
-// import { VCalendar } from "vuetify/labs/VCalendar";
 
 function getTheme() {
   // Always return "light" on server to ensure consistent SSR
@@ -65,14 +53,6 @@ export default defineNuxtPlugin((nuxtApp) => {
     components: {
       ...components,
       VPie,
-      VFileUpload,
-      VFileUploadDropzone,
-      VFileUploadItem,
-      VFileUploadList,
-      VStepperVertical,
-      VStepperVerticalItem,
-      // VCalendar,
-      VDateInput,
     },
     directives,
     theme: {
