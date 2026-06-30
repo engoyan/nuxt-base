@@ -1,7 +1,7 @@
 import { Model, useRepo } from "pinia-orm";
 import { usePocketBase } from "../composables/pocketbase";
 
-class BaseModel extends Model {
+export default class BaseModel extends Model {
   // Override in subclasses to map PB snake_case → camelCase
   // e.g. { first_name: 'firstName', job_title: 'jobTitle' }
   static fieldMapping = {};
@@ -132,6 +132,3 @@ class BaseModel extends Model {
     return record;
   }
 }
-
-export { BaseModel };
-export default BaseModel;
