@@ -1,16 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { fileURLToPath } from "url";
+const currentDir = fileURLToPath(new URL(".", import.meta.url));
+
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   modules: [],
+  alias: {
+    "#base-model": currentDir + "app/models/BaseModel.js",
+  },
   imports: {
     dirs: [
-      // // Add core services
-      // 'core/services',
-      // // Add specific files in core composables in subfolders
-      // 'core/composables/**/*.{ts,js,mjs,mts}',
-      // // Autoload all stores in all layers
-      // '**/stores'
       "models",
     ],
   },
