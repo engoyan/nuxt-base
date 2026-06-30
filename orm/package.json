@@ -8,22 +8,13 @@
     "url": "https://github.com/engoyan/nuxt-base.git",
     "directory": "orm"
   },
-  "keywords": [
-    "nuxt",
-    "nuxt-layer",
-    "pinia",
-    "pinia-orm",
-    "orm"
-  ],
+  "keywords": ["nuxt", "nuxt-layer", "pinia", "pinia-orm", "orm"],
   "dependencies": {
     "@pinia-orm/nuxt": "^1.9.1",
     "@pinia/nuxt": "^0.5.1",
     "pinia": "^2.1.7"
   },
-  "devDependencies": {
-    "nuxt": "^4.4.6"
-  },
-  "overrides": {
-    "vue": "latest"
+  "peerDependencies": {
+    "nuxt": "^4.0.0"
   }
 }

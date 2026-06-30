@@ -8,19 +8,11 @@
     "url": "https://github.com/engoyan/nuxt-base.git",
     "directory": "pb"
   },
-  "keywords": [
-    "nuxt",
-    "nuxt-layer",
-    "pocketbase",
-    "pb"
-  ],
+  "keywords": ["nuxt", "nuxt-layer", "pocketbase", "pb"],
   "dependencies": {
     "pocketbase": "^0.26.0"
   },
-  "devDependencies": {
-    "nuxt": "^4.4.6"
-  },
-  "overrides": {
-    "vue": "latest"
+  "peerDependencies": {
+    "nuxt": "^4.0.0"
   }
 }

@@ -8,21 +8,13 @@
     "url": "https://github.com/engoyan/nuxt-base.git",
     "directory": "vuetify"
   },
-  "keywords": [
-    "nuxt",
-    "nuxt-layer",
-    "vuetify",
-    "ui"
-  ],
+  "keywords": ["nuxt", "nuxt-layer", "vuetify", "ui"],
   "dependencies": {
     "@mdi/font": "^7.4.47",
     "vuetify": "^4.0.7"
   },
-  "devDependencies": {
-    "nuxt": "^4.4.6",
-    "sass-embedded": "1.93.3"
-  },
-  "overrides": {
-    "vue": "latest"
+  "peerDependencies": {
+    "nuxt": "^4.0.0",
+    "sass-embedded": "^1.80.0"
   }
 }

@@ -1,31 +1,23 @@
 {
   "name": "nuxt-base",
   "version": "0.1.0",
-  "description": "A collection of reusable Nuxt layers",
+  "description": "Reusable Nuxt layers: Vuetify + PocketBase + Pinia ORM",
   "type": "module",
-  "private": false,
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/engoyan/nuxt-base.git"
   },
-  "keywords": [
-    "nuxt",
-    "nuxt3",
-    "nuxt-layer",
-    "vuetify",
-    "pocketbase",
-    "pinia-orm"
-  ],
-  "author": "",
+  "keywords": ["nuxt", "nuxt-layer", "vuetify", "pocketbase", "pinia-orm"],
   "license": "MIT",
-  "workspaces": [
-    "app-base",
-    "pb",
-    "vuetify",
-    "orm"
-  ],
   "engines": {
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "nuxt": "^4.4.6",
+    "vue": "^3.5.34",
+    "vue-router": "^4.6.4",
+    "sass-embedded": "^1.93.3"
   }
 }
