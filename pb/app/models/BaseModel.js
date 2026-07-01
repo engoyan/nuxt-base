@@ -61,11 +61,13 @@ export default class BaseModel extends Model {
     const pb = usePocketBase();
 
     await pb.collection(this.entity).subscribe("*", (e) => {
+      const repo = useRepo(this);
       if (e.action === "delete") {
-        useRepo(this).destroy(e.record.id);
+        repo.destroy(e.record.id);
       } else {
         const mapped = this.mapRecord(e.record);
-        useRepo(this).save(mapped);
+        repo.hydratedDataCache.delete("get" + this.entity + mapped.id);
+        repo.save(mapped);
       }
     });
   }
