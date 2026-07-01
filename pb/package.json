@@ -13,6 +13,7 @@
     "pocketbase": "^0.26.0"
   },
   "peerDependencies": {
-    "nuxt": "^4.0.0"
+    "nuxt": "^4.0.0",
+    "pinia-orm": "^1.9.0"
   }
 }
