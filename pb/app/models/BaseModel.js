@@ -51,23 +51,21 @@ export default class BaseModel extends Model {
 
   static async load(options = {}) {
     const pb = usePocketBase();
-    const repo = useRepo(this);
     const records = await pb.collection(this.entity).getFullList(options);
     const mapped = records.map((r) => this.mapRecord(r));
-    repo.flush();
-    repo.save(mapped);
+    useRepo(this).fresh(mapped);
     return mapped;
   }
 
   static async subscribe() {
     const pb = usePocketBase();
-    const repo = useRepo(this);
 
     await pb.collection(this.entity).subscribe("*", (e) => {
       if (e.action === "delete") {
-        repo.destroy(e.record.id);
+        useRepo(this).destroy(e.record.id);
       } else {
-        repo.save(this.mapRecord(e.record));
+        const mapped = this.mapRecord(e.record);
+        useRepo(this).save(mapped);
       }
     });
   }
