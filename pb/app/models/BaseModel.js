@@ -66,7 +66,7 @@ export default class BaseModel extends Model {
         repo.destroy(e.record.id);
       } else {
         const mapped = this.mapRecord(e.record);
-        repo.hydratedDataCache.delete("get" + this.entity + mapped.id);
+        repo.hydratedDataCache.clear();
         repo.save(mapped);
       }
     });
