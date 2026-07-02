@@ -3,6 +3,7 @@ export default defineAppConfig({
     title: "NuxtBase",
     menu: [
       { text: "Home", to: "/", icon: "mdi-home" },
+      { text: "Status", to: "/status", icon: "mdi-list-status" },
       {
         text: "Docs",
         to: "/admin/docs",
