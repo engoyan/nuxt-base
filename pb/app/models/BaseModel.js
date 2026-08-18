@@ -59,9 +59,9 @@ export default class BaseModel extends Model {
 
   static async subscribe() {
     const pb = usePocketBase();
+    const repo = useRepo(this);
 
     await pb.collection(this.entity).subscribe("*", (e) => {
-      const repo = useRepo(this);
       if (e.action === "delete") {
         repo.destroy(e.record.id);
       } else {
